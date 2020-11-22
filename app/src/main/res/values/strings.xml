@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Crossfade</string>
+    <string name="choose_song_1">Choose song 1</string>
+    <string name="choose_song_2">Choose song 2</string>
+    <string name="play">Play</string>
+    <string name="crossfade_duration_help">Choose crossfade duration</string>
+</resources>

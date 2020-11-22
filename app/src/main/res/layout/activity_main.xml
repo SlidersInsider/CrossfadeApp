@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:background="@drawable/background_gradient"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="@string/crossfade_duration_help"
+        android:gravity="center"
+        android:textSize="14pt"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/crossfade_text"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="25dp"
+        android:text="6"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="70pt"/>
+
+    <SeekBar
+        android:id="@+id/crossfade_size"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="368dp"
+        android:layout_height="61dp"
+        android:layout_gravity="center"
+        android:max="8"
+        android:progress="4"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/song1_btn"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="15dp"
+            android:enabled="false"
+            android:onClick="chooseSong1"
+            android:text="@string/choose_song_1"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_choose_song"
+            app:backgroundTint="@empty"/>
+
+        <Button
+            android:id="@+id/song2_btn"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="30dp"
+            android:enabled="false"
+            android:onClick="chooseSong2"
+            android:text="@string/choose_song_2"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_choose_song"
+            app:backgroundTint="@empty" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/crossfade_btn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="100dp"
+        android:textColor="@color/white"
+        android:enabled="false"
+        android:onClick="crossfade"
+        android:text="@string/play"
+        android:background="@drawable/btn_choose_song"
+        app:backgroundTint="@empty"/>
+</LinearLayout>
